@@ -1,0 +1,33 @@
+body { font-family: sans-serif;}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+
+}
+
+.board {
+    width: 360px;  
+    background: #f0f0f0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 3px;
+    display: grid;
+    border: 1px solid #ddd;
+    box-shadow: 10px 10px 15px grey;
+    cursor: pointer;
+}
+
+.box{
+    background: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #222;
+}
+.box:hover {
+    background: #f0efef;
+}
